@@ -15,7 +15,7 @@ stories
     'default',
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="Menu">
-        <Menu attribute="category" />
+        <Menu attribute="brand" />
       </WrapWithHits>
     ),
     {
@@ -27,7 +27,7 @@ stories
     'with default selected item',
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="Menu">
-        <Menu attribute="category" defaultRefinement="Eating" />
+        <Menu attribute="brand" defaultRefinement="Apple" />
       </WrapWithHits>
     ),
     {
@@ -40,7 +40,7 @@ stories
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="Menu">
         <Menu
-          attribute="category"
+          attribute="brand"
           limit={2}
           showMoreLimit={5}
           showMore={true}
@@ -57,7 +57,7 @@ stories
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="Menu">
         <Menu
-          attribute="category"
+          attribute="brand"
           searchable
           transformItems={items =>
             orderBy(
@@ -79,7 +79,7 @@ stories
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="Menu">
         <Menu
-          attribute="category"
+          attribute="brand"
           transformItems={items =>
             orderBy(items, ['label', 'count'], ['asc', 'desc'])
           }
@@ -96,7 +96,7 @@ stories
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="Menu">
         <Panel header="Menu" footer="Footer">
-          <Menu attribute="category" />
+          <Menu attribute="brand" />
         </Panel>
       </WrapWithHits>
     ),
@@ -114,7 +114,7 @@ stories
         linkedStoryGroup="Menu"
       >
         <Panel header="Menu" footer="Footer">
-          <Menu attribute="category" />
+          <Menu attribute="brand" />
         </Panel>
 
         <div style={{ display: 'none' }}>
@@ -132,8 +132,8 @@ stories
     () => (
       <WrapWithHits linkedStoryGroup="Menu">
         <Menu
-          attribute="category"
-          defaultRefinement={text('defaultSelectedItem', 'Bathroom')}
+          attribute="brand"
+          defaultRefinement={text('defaultSelectedItem', 'Apple')}
           limit={number('limit', 10)}
           showMoreLimit={number('showMoreLimit', 20)}
           showMore={boolean('showMore', true)}

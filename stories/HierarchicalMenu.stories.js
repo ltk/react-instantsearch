@@ -15,7 +15,7 @@ stories
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="HierarchicalMenu">
         <HierarchicalMenu
-          attributes={['category', 'sub_category', 'sub_sub_category']}
+          attributes={['hierarchicalCategories.lvl0', 'hierarchicalCategories.lvl1', 'hierarchicalCategories.lvl2']}
         />
       </WrapWithHits>
     ),
@@ -29,8 +29,8 @@ stories
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="HierarchicalMenu">
         <HierarchicalMenu
-          attributes={['category', 'sub_category', 'sub_sub_category']}
-          defaultRefinement="Eating"
+          attributes={['hierarchicalCategories.lvl0', 'hierarchicalCategories.lvl1', 'hierarchicalCategories.lvl2']}
+          defaultRefinement="Cameras & Camcorders"
         />
       </WrapWithHits>
     ),
@@ -44,7 +44,7 @@ stories
     () => (
       <WrapWithHits hasPlayground={true} linkedStoryGroup="HierarchicalMenu">
         <HierarchicalMenu
-          attributes={['category', 'sub_category', 'sub_sub_category']}
+          attributes={['hierarchicalCategories.lvl0', 'hierarchicalCategories.lvl1', 'hierarchicalCategories.lvl2']}
           limit={2}
           showMoreLimit={5}
           showMore={true}
@@ -61,8 +61,8 @@ stories
     () => (
       <WrapWithHits linkedStoryGroup="HierarchicalMenu">
         <HierarchicalMenu
-          attributes={['category', 'sub_category', 'sub_sub_category']}
-          defaultRefinement={text('defaultSelectedItem', 'Bathroom')}
+          attributes={['hierarchicalCategories.lvl0', 'hierarchicalCategories.lvl1', 'hierarchicalCategories.lvl2']}
+          defaultRefinement={text('defaultSelectedItem', 'Cameras & Camcorders')}
           limit={number('limit', 10)}
           showMoreLimit={number('showMoreLimit', 20)}
           showMore={boolean('showMore', true)}
@@ -80,7 +80,7 @@ stories
       <WrapWithHits hasPlayground={true} linkedStoryGroup="HierarchicalMenu">
         <Panel header="Hierarchical Menu" footer="Footer">
           <HierarchicalMenu
-            attributes={['category', 'sub_category', 'sub_sub_category']}
+            attributes={['hierarchicalCategories.lvl0', 'hierarchicalCategories.lvl1', 'hierarchicalCategories.lvl2']}
           />
         </Panel>
       </WrapWithHits>
@@ -100,12 +100,12 @@ stories
       >
         <Panel header="Hierarchical Menu" footer="Footer">
           <HierarchicalMenu
-            attributes={['category', 'sub_category', 'sub_sub_category']}
+            attributes={['hierarchicalCategories.lvl0', 'hierarchicalCategories.lvl1', 'hierarchicalCategories.lvl2']}
           />
         </Panel>
 
         <div style={{ display: 'none' }}>
-          <SearchBox defaultRefinement="ds" />
+          <SearchBox defaultRefinement="tutututututu" />
         </div>
       </WrapWithHits>
     ),

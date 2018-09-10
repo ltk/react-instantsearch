@@ -23,7 +23,7 @@ export const CustomHits = connectHits(({ hits }) => (
             <img
               src={`https://res.cloudinary.com/hilnmyskv/image/fetch/h_100,q_100,f_auto/${
                 hit.image
-              }`}
+                }`}
             />
           </div>
         )}
@@ -122,7 +122,7 @@ export const WrapWithHits = ({
                 <SearchBox
                   translations={{
                     placeholder:
-                      'Search into our furnitures: chair, table, tv unit...',
+                      'Search into our products: phones, tv...',
                   }}
                 />
               ) : null}
@@ -157,7 +157,7 @@ WrapWithHits.propTypes = {
 WrapWithHits.defaultProps = {
   appId: 'latency',
   apiKey: '6be0576ff61c053d5f9a3225e2a90f76',
-  indexName: 'ikea',
+  indexName: 'instant_search',
 };
 
 // retrieves the displayName of the React Component

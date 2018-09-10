@@ -15,7 +15,7 @@ stories
     'default',
     () => (
       <WrapWithHits linkedStoryGroup="RefinementList" hasPlayground={true}>
-        <RefinementList attribute="category" />
+        <RefinementList attribute="brand" />
       </WrapWithHits>
     ),
     {
@@ -27,7 +27,7 @@ stories
     'with selected item',
     () => (
       <WrapWithHits linkedStoryGroup="RefinementList" hasPlayground={true}>
-        <RefinementList attribute="category" defaultRefinement={['Dining']} />
+        <RefinementList attribute="brand" defaultRefinement={['Apple']} />
       </WrapWithHits>
     ),
     {
@@ -40,7 +40,7 @@ stories
     () => (
       <WrapWithHits linkedStoryGroup="RefinementList" hasPlayground={true}>
         <RefinementList
-          attribute="category"
+          attribute="brand"
           limit={2}
           showMoreLimit={5}
           showMore={true}
@@ -56,7 +56,7 @@ stories
     'with search inside items',
     () => (
       <WrapWithHits linkedStoryGroup="RefinementList" hasPlayground={true}>
-        <RefinementList attribute="category" searchable />
+        <RefinementList attribute="brand" searchable />
       </WrapWithHits>
     ),
     {
@@ -69,7 +69,7 @@ stories
     () => (
       <WrapWithHits linkedStoryGroup="RefinementList" hasPlayground={true}>
         <RefinementList
-          attribute="category"
+          attribute="brand"
           transformItems={items =>
             orderBy(items, ['label', 'count'], ['asc', 'desc'])
           }
@@ -86,7 +86,7 @@ stories
     () => (
       <WrapWithHits linkedStoryGroup="RefinementList" hasPlayground={true}>
         <Panel header="Refinement List" footer="Footer">
-          <RefinementList attribute="category" />
+          <RefinementList attribute="brand" />
         </Panel>
       </WrapWithHits>
     ),
@@ -104,11 +104,11 @@ stories
         hasPlayground={true}
       >
         <Panel header="Refinement List" footer="Footer">
-          <RefinementList attribute="category" />
+          <RefinementList attribute="brand" />
         </Panel>
 
         <div style={{ display: 'none' }}>
-          <SearchBox defaultRefinement="ds" />
+          <SearchBox defaultRefinement="tutututututu" />
         </div>
       </WrapWithHits>
     ),
@@ -122,10 +122,10 @@ stories
     () => (
       <WrapWithHits linkedStoryGroup="RefinementList">
         <RefinementList
-          attribute="category"
+          attribute="brand"
           defaultRefinement={array('defaultSelectedItem', [
-            'Decoration',
-            'Lighting',
+            'Apple',
+            'Samsung',
           ])}
           limit={number('limit', 10)}
           showMoreLimit={number('showMoreLimit', 20)}
